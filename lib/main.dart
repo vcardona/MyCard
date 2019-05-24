@@ -121,7 +121,7 @@ class MyApp extends StatelessWidget {
                       Icons.call,
                     ),
                     title: Text(
-                      '57+(4) 3052901392',
+                      '57+(1) 529013923',
                       style: TextStyle(color: Colors.black45, fontSize: 13.0),
                     ),
                   ),
@@ -165,7 +165,7 @@ class MyApp extends StatelessWidget {
 
   _makeCall() async {
     // Android and iOS
-    const uri = "tel:3052901392";
+    const uri = "tel:529013923";
     if (await canLaunch(uri)) {
       await launch(uri);
     } else {
