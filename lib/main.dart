@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:io';
+import 'package:share/share.dart';
 
 void main() {
   runApp(MyApp());
@@ -123,6 +123,27 @@ class MyApp extends StatelessWidget {
                     title: Text(
                       '57+(1) 529013923',
                       style: TextStyle(color: Colors.black45, fontSize: 13.0),
+                    ),
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  print("Se presiono el boton");
+                  Share.share('check out my website https://example.com');
+                  // _makeCall();
+                },
+                child: Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.share,
+                    ),
+                    title: Text(
+                      'Share - Website Portfolio ',
+                      style: TextStyle(color: Colors.black45, fontSize: 15.0),
                     ),
                   ),
                 ),
